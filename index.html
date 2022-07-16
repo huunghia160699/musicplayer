@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/color.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./tailwind/build-tailwind.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+
+    <title>Music</title>
+</head>
+<body>
+<!-- --------------------------------------background-------------------------------------- -->
+    <div id="background"></div>
+<!-- --------------------------------------background-------------------------------------- -->
+    <div class="main_wrapper">
+<!-- --------------------------------------header-------------------------------------- -->
+    <header>
+        <div class="search-bar flex">
+            <div class="search-bar-icon">
+                <span class="material-symbols-outlined">chevron_left</span>
+                <span class="material-symbols-outlined">chevron_right</span>
+            </div>
+            <div class="search-form">
+                <form action="">
+                    <div class="search-icon">
+                        <span class="material-symbols-outlined">search</span>
+                        
+                    </div>
+                    <input type="search" name="search" id="search" autocomplete="none" placeholder="Tìm kiếm bài hát, nghệ sĩ, danh sách phát...">
+                </form>
+            </div>
+            
+        </div>
+
+        <div class="header-function flex-space_between">
+            <div class="function-icon flex-center">
+                <div class="upload-icon">
+                    <a href="#">
+                        <span class="material-symbols-outlined">file_upload</span>
+                    </a>
+                </div>
+                <div class="theme-icon">
+                    <a href="#" class="flex-center">
+                        <div class="theme-img">
+                            <img src="https://cdn4.iconfinder.com/data/icons/gradient-ui-1/512/themes-512.png" alt="">
+                        </div>
+                        <div class="color-box flex-space_between">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+
+            <div class="account flex">
+                <div class="account_img">
+                    <img src="https://stc-id.nixcdn.com/v11/images/avatar_default_2020.png" alt="">
+                </div>
+                <div class="account_info flex">
+                    <span>Hữu Nghĩa</span>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- <nav>
+            <span class="nav-list">
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+            </span>
+        </nav> -->
+    </header>
+<!-- --------------------------------------header-------------------------------------- -->
+
+<!-- --------------------------------------side-menu-------------------------------------- -->
+    <div class="side-menu">
+        <div class="side-menu-inner">
+            <div class="side-menu-inner-logo">
+                <div class="logo-full">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="logo-mini">
+                    <a href="#">
+                        <img src="./img/mini_logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="side-menu-inner-content">
+                <div class="side-menu-inner-content-full">
+                    <div class="discover side-menu-inner-content-full-item">
+                        <span>KHÁM PHÁ</span>
+                        <a class="active" href=""><i class="material-icons">home</i><span>Trang chủ</span></a>
+                        <a href="#"><i class="material-icons">timeline</i><span>#miChart</span></a>
+                        <a href="#"><i class="material-icons">insert_chart</i><span>Top 100</span></a>
+                        <a href="#"><i class="material-icons">view_list</i><span>Thể loại</span></a>
+                    </div>
+                    <hr>
+                    <div class="personal side-menu-inner-content-full-item">
+                        <span>THƯ VIỆN</span>
+                        <a href="#"><i class="material-icons">favorite_border</i><span>Yêu thích</span></a>
+                        <a href="#"><i class="material-icons">history</i><span>Gần đây</span></a>
+                        <a href="#"><i class="material-icons">queue_music</i><span>Playlist</span></a>
+                        <div class="add-playlist-icon">
+                            <i class="fa fa-plus"></i>
+                            <span>Thêm</span>
+                        </div>
+                            <div class="side-menu-playlist">
+                                <div class="side-menu-playlist-item">
+                                    <a href="#">Playlist 1</a>
+                                    <div class="side-menu-playlist-item-moreBtn">
+                                        <a href="#"><i class="material-icons">more_horiz</i></a>
+                                        <span>Khác</span>
+                                    </div>
+                                </div>
+                                <div class="side-menu-playlist-item">
+                                    <a href="#">Playlist 2</a>
+                                    <div class="side-menu-playlist-item-moreBtn">
+                                        <a href="#"><i class="material-icons">more_horiz</i></a>
+                                        <span>Khác</span>
+                                    </div>
+                                </div>
+                                <div class="side-menu-playlist-item">
+                                    <a href="#">Playlist 3</a>
+                                    <div class="side-menu-playlist-item-moreBtn">
+                                        <a href="#"><i class="material-icons">more_horiz</i></a>
+                                        <span>Khác</span>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                            </div>
+                    </div>
+                </div>
+                <div class="content_mini">
+                    
+                </div>
+
+            </div>
+        </div>
+        <div class="side-menu_close">
+            
+        </div>
+    </div>
+<!-- --------------------------------------side-menu-------------------------------------- -->
+        
+<!-- --------------------------------------main-page-------------------------------------- -->
+        <div class="mainpage">
+
+            <div class="mainpage_body">
+                
+                <div class="left_mainpage">
+                    <section id="slider">
+                        <div class="slider--tray">
+                            <div class="silder--main flex" >
+                                <a class="slider--img" href="#" target="_blank">
+                                    <img src="./img/Slider/slider1.jpg" alt="" id="slider0" class="active">
+                                </a>
+                                <a class="slider--img" href="#" target="_blank">
+                                    <img src="./img/Slider/slider2.jpg" alt="" id="slider1" >
+                                </a>
+                                <a class="slider--img" href="#" target="_blank">
+                                    <img src="./img/Slider/slider3.jpg" alt="" id="slider2">
+                                </a>
+                                <a class="slider--img" href="#" target="_blank">
+                                    <img src="./img/Slider/slider4.jpg" alt="" id="slider3">
+                                </a>
+                                <a class="slider--img" href="#" target="_blank">
+                                    <img src="./img/Slider/slider5.jpg" alt="" id="slider4">
+                                </a>
+                                <a class="slider--img" href="#" target="_blank">
+                                    <img src="./img/Slider/slider6.jpg" alt="" id="slider5">
+                                </a>
+                            </div>
+                        </div>
+                
+                        <div class="slider--dot flex">
+                            <button data-slider="slider0" class="active"></button>
+                            <button data-slider="slider1"></button>
+                            <button data-slider="slider2"></button>
+                            <button data-slider="slider3"></button>
+                            <button data-slider="slider4"></button>
+                            <button data-slider="slider5"></button>
+                        </div>
+                
+                        <div class="slider--btn next--slider">
+                            <button><i class="material-icons">chevron_right</i></button>
+                        </div>
+                
+                        <div class="slider--btn previous--slider">
+                            <button><i class="material-icons">chevron_left</i></button>
+                        </div>
+                    </section>
+
+                    <section class="list_container">
+                        <div class="list_header flex-space_between">
+                            <h2>MỚI PHÁT HÀNH</h2>
+                            <div class="list_header_icon">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <div class="list_body">
+                            <!-- <a href="#">
+                                <div class="list_body_box">
+                                    <div class="list_body_item_img" style="background-image: url(./img/artist/hoangthuylinh.jpg);">
+                                        <button><i class="fa-regular fa-circle-play"></i></button>
+                                    </div>
+                                    <div class="list_body_item_info">
+                                        <span class="list_body_item_song_name">Hạ còn vương nắng sfasf safsdfds</span>
+                                        <span class="list_body_item_song_artist">DatKaa</span>
+                                    </div>
+                                    
+                                </div>
+                            </a> -->
+                            
+                            
+                            
+                            
+                        </div>
+                        
+                    </section>
+
+                    <section class="mv_list">
+                        <div class="list_header">
+                            <h2>MUSIC VIDEO HOT</h2>
+                            <div class="list_header_icon">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="./img/mv/1655867634771_640.jpg" alt="">
+                                <span class="song_name">Hạ còn vương nắng</span>
+                                <span class="song_artist">DatKaa</span>
+                            </li>
+                            <li>
+                                <img src="./img/mv/1655867634771_640.jpg" alt="">
+                                <span class="song_name">Hạ còn vương nắng</span>
+                                <span class="song_artist">DatKaa</span>
+                            </li>
+                            <li>
+                                <img src="./img/mv/1655867634771_640.jpg" alt="">
+                                <span class="song_name">Hạ còn vương nắng</span>
+                                <span class="song_artist">DatKaa</span>
+                            </li>
+                            <li>
+                                <img src="./img/mv/1655867634771_640.jpg" alt="">
+                                <span class="song_name">Hạ còn vương nắng</span>
+                                <span class="song_artist">DatKaa</span>
+                            </li>
+                            <li>
+                                <img src="./img/mv/1655867634771_640.jpg" alt="">
+                                <span class="song_name">Hạ còn vương nắng</span>
+                                <span class="song_artist">DatKaa</span>
+                            </li>
+                            <li>
+                                <img src="./img/mv/1655867634771_640.jpg" alt="">
+                                <span class="song_name">Hạ còn vương nắng</span>
+                                <span class="song_artist">DatKaa</span>
+                            </li>
+                            <li>
+                                <img src="./img/mv/1655867634771_640.jpg" alt="">
+                                <span class="song_name">Hạ còn vương nắng</span>
+                                <span class="song_artist">DatKaa</span>
+                            </li>
+                            
+                        </ul>
+                    </section>
+
+                    <section class="top100_list">
+                        <div class="list_header">
+                            <h2>TOP 100</h2>
+                            <div class="list_header_icon">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="./img/top100/1652244707636.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/top100/1652244707636.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/top100/1652244707636.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/top100/1652244707636.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/top100/1652244707636.jpg" alt="">
+                            </li>
+                            
+                            
+                        </ul>
+                    </section>
+
+                    <section class="artist_list">
+                        <div class="list_header">
+                            <h2>NGHỆ SĨ NỔI BẬT</h2>
+                            <div class="list_header_icon">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="./img/artist/deamn.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/artist/deamn.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/artist/deamn.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/artist/deamn.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/artist/deamn.jpg" alt="">
+                            </li>
+                            
+                            
+                            
+                        </ul>
+                    </section>
+                    
+                    <section class="song_list">
+                        <div class="list_header">
+                            <h2>CÓ THỂ BẠN MUỐN NGHE</h2>
+                            <div class="list_header_icon">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="./img/cothebanmuonnghe/0d5bcab43cfb3a95d4220756257768b0.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/cothebanmuonnghe/35ea1e455f501bf53f6639df4d213ce3.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/cothebanmuonnghe/4d2cf32d9335a796dd111eab5645266a.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/cothebanmuonnghe/4d9d9e3bece35ebc7cc5ee775b7136a8.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/cothebanmuonnghe/8c3f767e88a8e3a8e902a93c46d5f222.png" alt="">
+                            </li>
+                            
+                            
+                            
+                        </ul>
+                    </section>
+                    
+
+                </div>
+
+                
+                
+                <div class="right_mainpage">
+                    <div class="trending">
+                        <div class="trending_header">
+                            <h2>BXH MV</h2>
+                        </div>
+                        
+                        <div class="trending_body">
+                            <div class="trending_songs">
+        
+                                <section class="flex">
+                                    <div class="order_nb">1</div>
+                                    <div class="trending_songs_img">
+                                        <img src="./img/song/haconvuongnang.png" alt="">
+                                    </div>
+                                    <div class="song_info">
+                                        <span>Hạ còn vương nắng nanwgs nanwgs</span>
+                                        <span>DatKaa</span>
+                                    </div>
+                                    <!-- <i class="material-icons">favorite_border</i> -->
+                                    <div class="song_view"><i class='fas fa-headphones'></i>1.333.333</div>
+                                    <!-- <i class="material-icons">more_vert</i> -->
+                                </section>
+                            
+
+                                
+
+                            </div>
+                        </div>
+                        
+    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<!-- --------------------------------------header-------------------------------------- -->
+
+<!-- --------------------------------------player-------------------------------------- -->
+        <div class="player flex">
+<!-- ---------------------------------------------------------------->
+            <div class="player_progress-bar" id="player_progress-bar">
+                <div class="progressed" id="progressed">
+                    <div class="progressed-dot" id="progressed-dot"></div>
+                </div>
+            </div>
+
+            <div class="player_track">
+
+                <div class="track_img">
+                    <img src="./img/default_img.png" alt="">
+                    <div class="virtualizer"></div>
+                </div>
+                <div class="track_info">
+                    <span>Tên bài hát</span>
+                    <span>Tác giả/Ca sĩ</span>
+                </div>
+
+                <div class="track_expand_btn">
+                    <div class="expand_btn">
+                        <i class="material-icons">more_horiz</i>
+                    </div>
+
+                    <div class="expand_contain">
+                        <div class="expand_header flex">
+                            <div class="expand_header_icon">
+                                <i class="material-icons">music_note</i>
+                            </div>
+                            <div class="expand_header_title">
+                                <span>Hạ Còn Vương Nắng</span>
+                                <div class="flex">
+                                    <span class="flex-center"><i class="material-icons">favorite</i>2.7M</span>
+                                    <span class="flex-center"><i class="material-icons">headset</i>45M</span>
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="expand_box flex">
+                            <span class="flex-center-col"><i class="material-icons">favorite_border</i>Yêu thích</span>
+                            <span class="flex-center-col"><i class="material-icons">filter_list</i>Lời bài hát</span>
+                            <span class="flex-center-col"><i class="material-icons">file_download</i>Tải về</span>
+                        </div>
+    
+                        <div class="expand_body">
+                            <span class="flex"><i class="material-icons">streetview</i><a href="#">Thông tin ca sĩ</a></span>
+                            <span class="flex"><i class="material-icons">playlist_add</i><a href="#">Thêm vào playlist</a></span>
+                            <span class="flex"><i class="material-icons">forum</i><a href="#">Bình luận</a></span>
+                            <span class="flex"><i class="material-icons">share</i><a href="#">Chia sẻ</a></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="player_body flex-center-col">
+                    <div class="player_body-btn flex"">
+                        <span class="small_btn random_btn">
+                            <div>
+                                <span class="material-symbols-outlined">shuffle</span>
+                            </div>
+                        </span>
+                        <span class="small_btn prev_btn">
+                            <div>
+                                <span class="material-symbols-outlined">skip_previous</span>
+                            </div>
+                        </span>
+                        <span class="main_play_btn">
+                            <div>
+                                <span class="material-symbols-outlined">play_arrow</span>
+                                <!-- <span class="material-symbols-outlined">pause</span> -->
+                            </div>
+                        </span>
+                        <span class="small_btn next_btn">
+                            <div>
+                                <span class="material-symbols-outlined">skip_next</span>
+                            </div>
+                        </span>
+                        <span class="small_btn repeat_btn ">
+                            <div>
+                                <span class="material-symbols-outlined">repeat</span>
+                                <!-- <span class="material-symbols-outlined">repeat_one</span> -->
+                            </div>
+                        </span>
+                    </div>
+                    
+                    
+            </div>
+               
+            <div class="player_function flex-center">
+                <div class="volumn_function flex-center">
+                    <span class="volume_btn">
+                        <div>
+                            <span class="material-symbols-outlined">volume_up</span>
+                            <!-- <span class="material-symbols-outlined">volume_down</span> -->
+                            <!-- <span class="material-symbols-outlined">volume_mute</span> -->
+                            <!-- <span class="material-symbols-outlined">volume_off</span> -->
+                        </div>
+                    </span>
+                    <form action="">
+                        <input type="range" id="volume_bar" name="volume_bar" min="0" max="">
+                    </form>
+                </div>
+
+                <div class="function_btn flex-space_between">
+                    <div class="flex-center">
+                        <span>MV</span>
+                        <span>Lyric</span>
+                    </div>
+                    <div class="flex-center">
+                        <i class="material-icons">library_music</i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<!-- --------------------------------------header-------------------------------------- -->
+    </div>
+    <audio id="audio" autoplay>
+        <source src="" type="">
+    </audio>
+
+
+    <script type="module" src="./js/app.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/drag.js"></script>
+
+    
+</body>
+</html>
+
