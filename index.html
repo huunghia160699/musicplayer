@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d06da83638.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+</head>
+<body>
+    <div id="background"></div>
+    <div class="container">
+        <header>
+            <div class="logo">
+                
+            </div>
+            <div class="search_form">
+                <form action="">
+                    
+                    <input type="search" name="search" id="search" autocomplete="none" placeholder="Search...">
+                </form>
+            </div>
+            <div class="btn">
+                
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="left">
+                <h2>Now playing</h2>
+                <div class="img">
+                    <img class="" src="" alt="">
+                    
+                </div>
+                <div class="title">
+                    <span class="song_name"></span>
+                    <span class="artist_name"></span>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Danh sách bài hát( <span class="total_song"></span> )</h2>
+                <div class="list">
+                    
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="player">
+                <!-- ---------------------------------------------------------------->
+                <div class="player_progress_bar" id="player_progress_bar">
+                    <div class="progressed" id="progressed">
+                        <div class="progressed_dot" id="progressed_dot">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="player_left">
+                    <div class="player_left_info">
+                        <span>Tên bài hát</span>
+                        <span>Tác giả/Ca sĩ</span>
+                    </div>
+                </div> -->
+                
+                <div class="player_center">
+                    
+                    
+                    <div class="center_btn">
+                        <div class="small_btn repeat_btn">
+                            <div class="small_btn_box">
+                                <span class="material-symbols-outlined">repeat</span>
+                            </div>
+                        </div>
+                        <div class="small_btn" id="prev_btn">
+                            <div class="small_btn_box">
+                                <i class="fas fa-step-backward"></i>
+                            </div>
+                        </div>
+                        <div class="big_btn main_play_btn">
+                            <div class="big_btn_box">
+                                <span class="material-symbols-outlined">play_arrow</span>
+                                <span class="material-symbols-outlined">pause</span>
+                            </div>
+                        </div>
+                        <div class="small_btn" id="next_btn">
+                            <div class="small_btn_box">
+                                <i class="fas fa-step-forward"></i>
+                            </div>
+                        </div>          
+                        <div class="small_btn random_btn">
+                            <div class="small_btn_box position_center">
+                                <i class="fas fa-random"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                        
+                        
+                </div>
+                               
+                <!-- <div class="player_right flex-center">
+                    
+                    <div class="volume_function flex-center">
+                        <div class="volume_btn" id="volume_btn">
+                            <div class="volume_btn_box">
+                                <span class="material-symbols-outlined">volume_up</span>
+                                <span class="material-symbols-outlined">volume_down</span>
+                                <span class="material-symbols-outlined">volume_mute</span>
+                                <span class="material-symbols-outlined">volume_off</span>
+                            </div>
+                        </div>
+                        <div class="player_volume_bar" id="player_volume_bar">
+                            <div class="volume_progressed" id="volume_progressed">
+                                <div class="volume_progressed_dot" id="volume_progressed_dot">
+                                    <span>77%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right_btn">
+                            <div class="right_btn_box" id="fullscreen_btn">
+                                <span class="material-symbols-outlined">fullscreen</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- <div class="playlist_function">
+                        <div class="playlist_btn" id="playlist_btn">
+                            <span class="material-symbols-outlined">playlist_play</span>
+                        </div>
+                    </div> -->
+        
+                </div> -->
+                
+            </div>
+        </footer>
+    </div>
+    <audio id='audio' src="" controls ></audio>
+    <script src="./main.js"></script>
+</body>
+</html>
